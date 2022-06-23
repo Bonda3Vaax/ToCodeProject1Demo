@@ -1,28 +1,36 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
     background-color: #919191;
 }
   
-header {
-    display: block;
-    width: 100%;
-    padding: 100px;    
+.headerWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;   
+    height: 40vh;
+    border: 10px rgb(255, 255, 255) solid;    
+    padding: 50px;             
     background-color: rgb(255, 255, 255);
 }
 
-.headerWrap img {
-    float: left;
-    width: 200px;
-    height: 200px;
-    background: rgb(255, 255, 255);
+.headerLogoWrap {
+    display: flex;    
 }
-      
-.mainTitle {
-    display: flex;
-    transform: translate(5%, 5%);
+
+.headerLogo {
+    height: 10em;
+    width: 10em;
+}
+    
+.mainTitle {    
     text-transform: uppercase;
     font-family: verdana;
-    font-size: 7em;
+    font-size: 9vw;
     font-weight: 700;
     color: red;
     text-shadow: 1px 1px 1px #919191,
@@ -42,37 +50,32 @@ header {
 }
 
 .sectionOptions {    
-    position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;  
-    height: 100px;
+    height: 200px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     border: 3px solid rgb(255, 255, 255);
 }
 
-h1 {
+.sectionHeader {
     text-align: center;
+
 }
 
-.optionsButtons {
-    margin: 0;
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+
 
 button {
     background-color: #ffffff; /* Green */
     border-radius: 30px;
     border-style: double;
     color: rgb(0, 0, 0);
-    padding: 25px 45px;   
+    padding: 25px 35px;   
     text-align: center;    
     display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .backgroundImage img {    
